@@ -63,10 +63,16 @@ MIDDLEWARE = [
 # Allow your frontend to access the API
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
-    "https://tamravarsity.lamzingtech.com/",  # React frontend
+    "https://tamraversity-backend.lamzingtech.com",  # React frontend
+    "https://tamraversity.lamzingtech.com",
 ]
 # If you want to allow all origins (not recommended for production)
 CORS_ALLOW_ALL_ORIGINS = True
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://tamraversity-backend.lamzingtech.com",
+    "https://tamraversity.lamzingtech.com"
+]
 
 ROOT_URLCONF = 'tamravarsity.urls'
 
