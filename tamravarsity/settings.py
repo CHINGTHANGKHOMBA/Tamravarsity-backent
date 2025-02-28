@@ -62,7 +62,8 @@ MIDDLEWARE = [
 
 # Allow your frontend to access the API
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",  # React frontend
+    "http://localhost:5173",
+    "https://tamraversity-backend.lamzingtech.com",  # React frontend
 ]
 # If you want to allow all origins (not recommended for production)
 CORS_ALLOW_ALL_ORIGINS = True
